@@ -1,0 +1,97 @@
+body
+    margin: 0
+    width: 100%
+    font-family: 'Roboto', sans-serif
+    display: flex
+    flex-direction: column
+    overflow: hidden
+
+    a
+        cursor: pointer
+
+#editor
+    border: none
+    width: 100%
+    overflow: auto
+    padding: 1em
+    overflow-y: auto
+    overflow-x: hidden
+    outline: none
+    box-sizing: border-box
+
+    *::selection
+        background: #a8d1ff
+        color: #333
+
+.toolbar
+    // background: #eee
+    background: #63D2FF
+    width: 100%
+    box-sizing: border-box
+    display: flex
+    user-select: none
+
+    .logo
+        padding: 10px 20px
+        height: 100px
+        font-size: 1.5em
+        background: #71D6FF
+
+    .menu
+        display: none
+
+    a, .fore-wrapper, .back-wrapper
+        font-family: 'Oswald', sans-serif
+        color: #fff
+        padding: 10px
+        display: inline-block
+        transition: all 200ms
+        text-decoration: none
+
+        &:hover
+            background: #5ABFE8
+
+        &:active
+            transform: scale(.8)
+
+        &.palette-item
+            height: 1em
+            border-radius: 3px
+            margin: 2px
+            width: 1em
+            border: 1px solid #CCC
+
+            &:hover
+                border: 1px solid #ccc
+                box-shadow: 0 0 3px #333
+
+    .fore-palette, .back-palette
+        display: none
+        width: 0
+        transition: all 300ms
+
+        a
+            background: #fff
+
+    .fore-wrapper, .back-wrapper
+        display: inline-block
+        cursor: pointer
+
+        &:hover
+            .fore-palette, .back-palette
+                display: block
+                float: left
+                position: absolute
+                padding: 3px
+                background: #fff
+                border: 1px solid #ddd
+                box-shadow: 0 0 5px #ccc
+                width: auto
+
+@media (max-width: 700px)
+
+    .menu
+        display: block
+
+    .tools
+        display: none
