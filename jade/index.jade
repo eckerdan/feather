@@ -1,0 +1,59 @@
+doctype html
+html
+    head
+        title Feather
+        meta( href="" charset="utf-8")
+        meta( href="" name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="apple-touch-icon", sizes="180x180", href="favicon/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="favicon/favicon-32x32.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="favicon/favicon-16x16.png")
+        link(rel="manifest", href="favicon/manifest.json")
+        link(rel="mask-icon", href="favicon/safari-pinned-tab.svg", color="#5bbad5")
+        meta(name="theme-color", content="#ffffff")
+        link(rel="stylesheet prefetch" href="css/font-awesome.min.css")
+        link(rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Allura|Patua+One")
+        link(rel="stylesheet" href="css/style.css")
+        link(rel="stylesheet" href="css/print.css" media="print")
+
+    body
+        .toolbar
+            img.logo(src="img/logo-white.svg")
+
+            .menu: h3 menu
+
+            .tools
+                a( href="" data-command="undo"): i.fa.fa-undo
+                a( href="" data-command="redo"): i.fa.fa-repeat
+                a( href="" data-command="save"): i.fa.fa-floppy-o
+                a( href="" data-command="print"): i.fa.fa-print
+                .fore-wrapper
+                    i.fa.fa-font(style="color: #c96;")
+                    .fore-palette
+                .back-wrapper
+                    i.fa.fa-font(style="background: #c96; color: #000;")
+                    .back-palette
+                a( href="" data-command="bold"): i.fa.fa-bold
+                a( href="" data-command="italic"): i.fa.fa-italic
+                a( href="" data-command="underline"): i.fa.fa-underline
+                a( href="" data-command="strikeThrough"): i.fa.fa-strikethrough
+                a( href="" data-command="justifyLeft"): i.fa.fa-align-left
+                a( href="" data-command="justifyCenter"): i.fa.fa-align-center
+                a( href="" data-command="justifyRight"): i.fa.fa-align-right
+                a( href="" data-command="justifyFull"): i.fa.fa-align-justify
+                a( href="" data-command="indent"): i.fa.fa-indent
+                a( href="" data-command="outdent"): i.fa.fa-outdent
+                a( href="" data-command="insertUnorderedList"): i.fa.fa-list-ul
+                a( href="" data-command="insertOrderedList"): i.fa.fa-list-ol
+                a( href="" data-command="h1") H1
+                a( href="" data-command="h2") H2
+                a( href="" data-command="createlink"): i.fa.fa-link
+                a( href="" data-command="unlink"): i.fa.fa-unlink
+                a( href="" data-command="insertimage"): i.fa.fa-image
+                a( href="" data-command="p") P
+                a( href="" data-command="subscript"): i.fa.fa-subscript
+                a( href="" data-command="superscript"): i.fa.fa-superscript
+
+        #editor(contenteditable spellcheck="false")
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        script(src="js/script.js")
